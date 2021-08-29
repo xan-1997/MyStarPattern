@@ -9,14 +9,14 @@ public class SquareStar {
         getSquareStar(length);
     }
 
-    //kvadrat ulduzun capa verilmesi
+    //kvadrat ulduzun sadece capa verilmesi
     static void getSquareStar(int lengthOfStar) {
-        if(lengthOfStar<3){
+        if (lengthOfStar < 3) {
             System.out.println("Uzunluq 3 den cox olmalidir");
             return;
         }
 
-        if (lengthOfStar%2==0){
+        if (lengthOfStar % 2 == 0) {
             System.out.println("Uzunluq tek reqem olmalidir");
             return;
         }
@@ -37,7 +37,6 @@ public class SquareStar {
             System.out.println();
         }
     }
-
 
 }
 
