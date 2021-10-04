@@ -36,11 +36,11 @@ public class SquareStar {
                 else
                     System.out.print(ulduz[x][y] = "   ");
             }
-
             numberOfSpaces--;
             System.out.println();
         }
     }
+    
 
 }
 
