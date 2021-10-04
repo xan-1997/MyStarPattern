@@ -22,13 +22,15 @@ public class SquareStar {
         }
 
         String[][] ulduz = new String[lengthOfStar][lengthOfStar];
-        int numberOfSpaces = lengthOfStar / 2;  //probellerin sayi
+        //probelin bir teref ucun olan sayi(sol veya saq terefi ucun ikiside bir birine beraber olur)
+        int numberOfSpaces = lengthOfStar / 2;
+
 
         for (int x = 0; x < lengthOfStar; x++) {
             for (int y = 0; y < lengthOfStar; y++) {
 
-                int numberOfStars = lengthOfStar - Math.abs(numberOfSpaces); //ulduzlarin sayi
-                if (y >= Math.abs(numberOfSpaces) && y < numberOfStars)
+                int finishIndexOfStar = lengthOfStar - Math.abs(numberOfSpaces); //ulduzun biteceyi indeks
+                if (y >= Math.abs(numberOfSpaces) && y < finishIndexOfStar)
                     System.out.print(ulduz[x][y] = " * ");
                 else
                     System.out.print(ulduz[x][y] = "   ");
