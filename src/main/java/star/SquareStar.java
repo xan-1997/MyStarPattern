@@ -24,17 +24,18 @@ public class SquareStar {
         String[][] ulduz = new String[lengthOfStar][lengthOfStar];
         //probelin bir teref ucun olan sayi(sol veya saq terefi ucun ikiside bir birine beraber olur)
         int numberOfSpaces = lengthOfStar / 2;
-
-
         for (int x = 0; x < lengthOfStar; x++) {
             for (int y = 0; y < lengthOfStar; y++) {
 
-                int finishIndexOfStar = lengthOfStar - Math.abs(numberOfSpaces); //ulduzun biteceyi indeks
+                //ulduzun biteceyi indeks
+                int finishIndexOfStar = lengthOfStar - Math.abs(numberOfSpaces);
+                //ulduzun cekilmesi ucun yoxlanilan shertdir
                 if (y >= Math.abs(numberOfSpaces) && y < finishIndexOfStar)
                     System.out.print(ulduz[x][y] = " * ");
                 else
                     System.out.print(ulduz[x][y] = "   ");
             }
+
             numberOfSpaces--;
             System.out.println();
         }
