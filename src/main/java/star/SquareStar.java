@@ -27,7 +27,7 @@ public class SquareStar {
         for (int x = 0; x < lengthOfStar; x++) {
             for (int y = 0; y < lengthOfStar; y++) {
 
-                int numberOfStars = lengthOfStar - Math.abs(numberOfSpaces); //ulduzlarin sayi
+                int numberOfStars = lengthOfStar - Math.abs(numberOfSpaces); //ulduzun bitdiyi indeks
                 if (y >= Math.abs(numberOfSpaces) && y < numberOfStars)
                     System.out.print(ulduz[x][y] = " * ");
                 else
