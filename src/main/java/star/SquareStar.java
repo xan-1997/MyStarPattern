@@ -24,6 +24,7 @@ public class SquareStar {
         String[][] ulduz = new String[lengthOfStar][lengthOfStar];
         //probelin bir teref ucun olan sayi(sol veya saq terefi ucun ikiside bir birine beraber olur)
         int numberOfSpaces = lengthOfStar / 2;
+        
         for (int x = 0; x < lengthOfStar; x++) {
             for (int y = 0; y < lengthOfStar; y++) {
 
